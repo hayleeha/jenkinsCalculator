@@ -1,5 +1,7 @@
+import java.util.Stack;
+import java.util.UUID;
 
-class Calculator {
+class Calculator { ;
 
     Calculator(){
 
@@ -53,7 +55,25 @@ class Calculator {
     if int a = 16 then this method returns: 10000
      */
     String intToBinaryNumber(int n){
-        return null;
+//        Stack<Integer> st = new Stack<>();
+//
+//        // Number Should be positive
+//        while (n > 0) {
+//
+//            // Pushing numbers inside stack that
+//            // are divisible by 2
+//            st.push(n % 2);
+//            // Dividing number by 2
+//            n = n / 2;
+//        }
+//
+//        // Checking condition whether stack is empty
+//        while (!(st.isEmpty())) {
+//
+//            // Printing binary number
+//            System.out.print(st.pop());
+//        }
+        return "hello";
     }
 
     /*
@@ -65,8 +85,8 @@ class Calculator {
     if you run this function twice with the same String input, it must return 2 unique String IDs
      */
     String createUniqueID(String n){
-
-        return null;
+        String uniqueID = UUID.randomUUID().toString();
+        return n + uniqueID;
     }
 
 
