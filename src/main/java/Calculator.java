@@ -55,25 +55,7 @@ class Calculator { ;
     if int a = 16 then this method returns: 10000
      */
     String intToBinaryNumber(int n){
-//        Stack<Integer> st = new Stack<>();
-//
-//        // Number Should be positive
-//        while (n > 0) {
-//
-//            // Pushing numbers inside stack that
-//            // are divisible by 2
-//            st.push(n % 2);
-//            // Dividing number by 2
-//            n = n / 2;
-//        }
-//
-//        // Checking condition whether stack is empty
-//        while (!(st.isEmpty())) {
-//
-//            // Printing binary number
-//            System.out.print(st.pop());
-//        }
-        return "hello";
+        return Integer.toBinaryString(n);
     }
 
     /*
