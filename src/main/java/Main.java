@@ -15,16 +15,15 @@ public class Main {
             Calculator calculator = new Calculator();
             String type = infoArray[0];
             int firstNum = Integer.parseInt(infoArray[1]);
-            int secondNum = Integer.parseInt(infoArray[2]);
 
             if(type.equals("add")) {
-                System.out.println(calculator.add(firstNum, secondNum));
+                System.out.println(calculator.add(firstNum, Integer.parseInt(infoArray[2])));
             } else if (type.equals("subtract")) {
-                System.out.println(calculator.subtract(firstNum, secondNum));
+                System.out.println(calculator.subtract(firstNum, Integer.parseInt(infoArray[2])));
             } else if (type.equals("divide")) {
-                System.out.println(calculator.divide(firstNum, secondNum));
+                System.out.println(calculator.divide(firstNum, Integer.parseInt(infoArray[2])));
             } else if (type.equals("multiply")) {
-                System.out.println(calculator.multiply(firstNum, secondNum));
+                System.out.println(calculator.multiply(firstNum, Integer.parseInt(infoArray[2])));
             } else if (type.equals("fibonacci")) {
                 System.out.println(calculator.fibonacciNumberFinder(firstNum));
             } else if (type.equals("binary")) {
